@@ -61,11 +61,11 @@ modules:
         existing_destinations_policy: update
   build-parameters:
     no-source: true
-- name: undefined-app-content
+- name: cpapp-app-content
   type: com.sap.application.content
   path: .
   requires:
-  - name: undefined-repo-host
+  - name: cpapp-repo-host
     parameters:
       content-target: true
   build-parameters:
@@ -135,13 +135,13 @@ resources:
   parameters:
     service: html5-apps-repo
     service-plan: app-host
-- name: undefined-repo-host
+- name: cpapp-repo-host
   type: org.cloudfoundry.managed-service
   parameters:
     service: html5-apps-repo
-    service-name: undefined-html5-srv
+    service-name: cpapp-html5-repo-host
     service-plan: app-host
-- name: undefined-destination-service
+- name: cpapp-destination-service
   type: org.cloudfoundry.managed-service
   parameters:
     config:
@@ -157,7 +157,7 @@ resources:
           existing_destinations_policy: update
       version: 1.0.0
     service: destination
-    service-name: undefined-destination-service
+    service-name: cpapp-destination-service
     service-plan: lite
 parameters:
   deploy_mode: html5-repo

@@ -25,16 +25,16 @@
                     "semanticObject": "Mitigations",
                     "action": "display"
                 }
-            },
-            "dataSources": {
-                "mainService": {
-                    "uri": "/odata/v4/service/risk/",
-                    "type": "OData",
-                    "settings": {
-                        "annotations": [],
-                        "localUri": "localService/metadata.xml",
-                        "odataVersion": "4.0"
-                    }
+            }
+        },
+        "dataSources": {
+            "mainService": {
+                "uri": "/odata/v4/service/risk/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "4.0"
                 }
             }
         },
@@ -153,10 +153,6 @@
                 "async": true,
                 "id": "app"
             }
-        },
-        "sap.cloud": {
-            "public": true,
-            "service": "cpapp.service"
         }
     },
     "sap.cloud": {
